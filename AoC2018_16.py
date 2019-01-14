@@ -116,15 +116,13 @@ print('Assigned opcodes: ', mapping)
 
 print(mapping[1])
 
-register_before = [0, 0, 0, 0]
-'''
+#register_before = [0, 0, 0, 0]
+
 for line in program.splitlines():
     print(line)
+    line = (re.split(r'\s', line))
     opcode = mapping[int(line[0])]
     print(int(line[0]), opcode)
     register_before = build_new_register(opcode, int(line[1]), int(line[2]), int(line[3]), register_before)
-    print(register_before)
-'''
-# Hier ist noch eine Zeile
+    print(register_before[0])
 
-# hsjhdjshdjshds
