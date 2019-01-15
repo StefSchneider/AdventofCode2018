@@ -64,4 +64,3 @@ print('\r')
 print('Best polymer: ', best_polymer)
 print('Minimum length: ', minimum_length)
 
-# hdsjdshdjshdjsdhsd
