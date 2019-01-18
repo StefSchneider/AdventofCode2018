@@ -1,7 +1,7 @@
 '''
 Advent of Code - Day 16
 Author: Stefan Schneider
-Github: stefschneider1970
+Github: StefSchneider
 '''
 
 import re
@@ -54,8 +54,8 @@ def calculate_output_c(opcode: str, input_a: int, input_b: int, register_operate
 def build_new_register(opcode: str, input_a: int, input_b: int, output_c: int, register_operate):
     register_operate = register_before[:]
     print('Register before: ', register_before)
-    print('Opcode: ', OPCODES[command])
-    register_operate[output_c] = calculate_output_c(opcode, operation[1], operation[2], register_operate)
+    print('Opcode: ', opcode, '| Input A: ', input_a, '| Input B:', input_b, '| Output-Register:', output_c)
+    register_operate[output_c] = calculate_output_c(opcode, input_a, input_b, register_operate)
     print('Register after operation: ', register_operate)
 
     return register_operate
@@ -114,15 +114,12 @@ while len(library_keys) > 0: # assigning opcodes to code numbers
 
 print('Assigned opcodes: ', mapping)
 
-print(mapping[1])
+register_before = [0, 0, 0, 0]
 
-#register_before = [0, 0, 0, 0]
-
-for line in program.splitlines():
-    print(line)
+for line in program.splitlines(): # operate part two
     line = (re.split(r'\s', line))
     opcode = mapping[int(line[0])]
-    print(int(line[0]), opcode)
     register_before = build_new_register(opcode, int(line[1]), int(line[2]), int(line[3]), register_before)
-    print(register_before[0])
 
+print('\r')
+print('Last Value of register 0: ', register_before[0])
