@@ -37,8 +37,8 @@ def calculate_output_c(opcode: str, input_a: int, input_b: int, register_operate
 
 def build_new_register(opcode: str, input_a: int, input_b: int, output_c: int, register_input: list, ip: int):
     register_operate = register_input[:]
-    print('Register before: ', register_input)
-    print('Opcode: ', opcode, '| Input A: ', input_a, '| Input B:', input_b, '| Output-Register:', output_c)
+#    print('Register before: ', register_input)
+#    print('Opcode: ', opcode, '| Input A: ', input_a, '| Input B:', input_b, '| Output-Register:', output_c)
     register_operate[output_c] = calculate_output_c(opcode, input_a, input_b, register_operate)
     print('Register after operation: ', register_operate)
 
@@ -58,7 +58,7 @@ ip_register = int(ip_register)
 data_file = data_file[1:]
 print(data_file)
 while ip < len(data_file):
-    print('ip/line number:', ip)
+#    print('ip/line number:', ip)
     register[ip_register] = ip
     opcode, input_a, input_b, output_c = re.split(r'\s', data_file[ip])
     print(opcode, input_a, input_b, output_c)
@@ -72,7 +72,7 @@ while ip < len(data_file):
 #    else:
     ip = register[ip_register]+1
 
-    press_key = input('Taste drücken')
+#    press_key = input('Taste drücken')
 #    if register[5] > register[ip_register]:
 #        ip = 16
  #   else:
