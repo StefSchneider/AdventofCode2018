@@ -4,7 +4,7 @@ Author: Stefan Schneider
 Github: StefSchneider
 """
 
-import re # import regular expressions
+import re # import regular expressions lib
 
 path_file: str = "AoC2018_21_input.txt"
 ip: int = 0 # stores value of instruction pointer
