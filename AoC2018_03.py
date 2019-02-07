@@ -1,8 +1,8 @@
-'''
+"""
 Advent of Code 2018 - Day 03
 Author: Stefan Schneider
-Github: stefschneider1970
-'''
+Github: StefSchneider
+"""
 
 import numpy
 
@@ -40,11 +40,18 @@ list_claims: list = []
 
 fabric: list = []
 
-for count in range(1, 1000000):
+for i in range(1, 1000001):
     fabric.append(list_claims)
 
+print(type(fabric))
+print(len(fabric))
+#print(fabric)
 
+fabric2 = numpy.array(fabric).reshape(1000,1000)
 
+#print(fabric2[21][22])
+
+"""
 with open(path_file, 'r') as data_file:
     for line in data_file:
         id, coordinates_size = line.strip().split(' @ ')
@@ -71,3 +78,4 @@ with open(path_file, 'r') as data_file:
 
 
 print(fabric[21][21])
+"""

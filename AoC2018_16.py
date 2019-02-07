@@ -32,22 +32,22 @@ OPCODES = ['addr', 'addi',
 
 def calculate_output_c(opcode: str, input_a: int, input_b: int, register_operate):
     return {
-        'addr': lambda: register_operate[input_a]+register_operate[input_b], # add register
-        'addi': lambda: register_operate[input_a]+input_b, # add immediate
-        'mulr': lambda: register_operate[input_a]*register_operate[input_b], # multiply register
-        'muli': lambda: register_operate[input_a]*input_b, # multiply immediate
-        'banr': lambda: register_operate[input_a]&register_operate[input_b], # bitwise AND register
-        'bani': lambda: register_operate[input_a]&input_b, # bitwise AND immediate
-        'borr': lambda: register_operate[input_a]|register_operate[input_b], # bitwise OR register
-        'bori': lambda: register_operate[input_a]|input_b, # bitwise OR immediate
-        'setr': lambda: register_operate[input_a], # set register
-        'seti': lambda: input_a, # set immediate
-        'gtir': lambda: 1 if input_a > register_operate[input_b] else 0, # greater-than immediate/register
-        'gtri': lambda: 1 if register_operate[input_a] > input_b else 0, # greater-than register/immediate
-        'gtrr': lambda: 1 if register_operate[input_a] > register_operate[input_b] else 0, # greater-than register/register
-        'eqir': lambda: 1 if input_a == register_operate[input_b] else 0, # equal immediate/register
-        'eqri': lambda: 1 if register_operate[input_a] == input_b else 0, # equal register/immediate
-        'eqrr': lambda: 1 if register_operate[input_a] == register_operate[input_b] else 0, # equal register/register
+        "addr": lambda: register_operate[input_a] + register_operate[input_b],  # add register
+        "addi": lambda: register_operate[input_a] + input_b,  # add immediate
+        "mulr": lambda: register_operate[input_a] * register_operate[input_b],  # multiply register
+        "muli": lambda: register_operate[input_a] * input_b,  # multiply immediate
+        "banr": lambda: register_operate[input_a] & register_operate[input_b],  # bitwise AND register
+        "bani": lambda: register_operate[input_a] & input_b,  # bitwise AND immediate
+        "borr": lambda: register_operate[input_a] | register_operate[input_b],  # bitwise OR register
+        "bori": lambda: register_operate[input_a] | input_b,  # bitwise OR immediate
+        "setr": lambda: register_operate[input_a],  # set register
+        "seti": lambda: input_a,  # set immediate
+        "gtir": lambda: 1 if input_a > register_operate[input_b] else 0,  # greater-than immediate/register
+        "gtri": lambda: 1 if register_operate[input_a] > input_b else 0,  # greater-than register/immediate
+        "gtrr": lambda: 1 if register_operate[input_a] > register_operate[input_b] else 0, # greater-than register/register
+        "eqir": lambda: 1 if input_a == register_operate[input_b] else 0,  # equal immediate/register
+        "eqri": lambda: 1 if register_operate[input_a] == input_b else 0,  # equal register/immediate
+        "eqrr": lambda: 1 if register_operate[input_a] == register_operate[input_b] else 0,  # equal register/register
     }.get(opcode, lambda: None)()
 
 
@@ -72,7 +72,6 @@ def build_lib_keys() -> dict:
 # ---------- PART ONE ----------
 
 build_lib_keys() # preparation for part two
-
 
 print('Starting part one...\r')
 
