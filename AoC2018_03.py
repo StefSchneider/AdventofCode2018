@@ -38,7 +38,7 @@ list_claims: list = []
 
 #fabric = [[list_claims] * 1000 for count in range(1000)] # creates an array of lists filled with an empty list
 
-fabric: list = []
+fabric: list = [] #jjshdjshdjs
 
 for i in range(1, 1000001):
     fabric.append(list_claims)
