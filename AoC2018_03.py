@@ -25,7 +25,7 @@ class Claim:
         return list_ids
 
 
-path_file: str = 'AoC2018_03_data_claim.txt'
+path_file: str = 'AoC2018_03_input.txt'
 id: str = ''
 coordinates_size: str = ''
 coordinates: str = ''
@@ -34,24 +34,11 @@ x_pos: int = 0 # part of coordinates
 y_pos: int = 0 # part of coordinates
 x_size: int = 0 # part of size
 y_size: int = 0 # part of size
-list_claims: list = []
+list_claims = []
+overlap: int = 0
 
-#fabric = [[list_claims] * 1000 for count in range(1000)] # creates an array of lists filled with an empty list
+fabric = [[list_claims[:] for j in range(1000)] for i in range(1000)]
 
-fabric: list = [] #jjshdjshdjs
-
-for i in range(1, 1000001):
-    fabric.append(list_claims)
-
-print(type(fabric))
-print(len(fabric))
-#print(fabric)
-
-fabric2 = numpy.array(fabric).reshape(1000,1000)
-
-#print(fabric2[21][22])
-
-"""
 with open(path_file, 'r') as data_file:
     for line in data_file:
         id, coordinates_size = line.strip().split(' @ ')
@@ -66,16 +53,12 @@ with open(path_file, 'r') as data_file:
         for count_x in range(0, x_size):
             for count_y in range(0, y_size):
                 fabric[x_pos+count_x][y_pos+count_y].append(id)
-                print(x_pos+count_x, y_pos+count_y)
-                print(fabric[x_pos+count_x][y_pos+count_y])
+#                print(x_pos+count_x, y_pos+count_y)
+#                print(fabric[x_pos+count_x][y_pos+count_y])
 
 
-
- #               print(current_list)
- #               current_list = current_list.append(id)
- #               fabric[x_pos+count_x][y_pos+count_y] = current_list
-
-
-
-print(fabric[21][21])
-"""
+for i in range(0, 1000):
+    for j in range(0, 1000):
+        if len(fabric[i][j]) > 1:
+            overlap += 1
+            print(overlap)
