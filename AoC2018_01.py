@@ -1,7 +1,7 @@
 """
 Advent of Code 2018 - Day 1
 Author: Stefan Schneider
-Github stefschneider1970
+Github StefSchneider
 """
 
 from itertools import cycle # just for Part 2
