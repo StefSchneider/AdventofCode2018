@@ -8,14 +8,14 @@ import collections
 
 max_players: int = 452
 #max_players = 30
-last_marble_point: int = 7078400
+last_marble_point: int = 70784
 #last_marble_point = 5807
 player: int = 1
 current_marble: int = 1
 max_point: int = 0
 
 
-players_points = collections.defaultdict()
+players_points: dict = {}
 marbles = collections.deque([0])
 
 for i in range(1, max_players+1):
@@ -42,8 +42,7 @@ while current_marble <= last_marble_point:
     if player > max_players:
         player = 1
 
-for i in range(1, max_players+1):
-    if players_points[i] > max_point:
-        max_point = players_points[i]
+
+max_point = sorted(players_points.values(), reverse = True)[0]
 
 print(max_point)
