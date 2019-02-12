@@ -6,10 +6,8 @@ Github: StefSchneider
 
 import collections
 
-max_players: int = 452
-#max_players = 30
-last_marble_point: int = 70784
-#last_marble_point = 5807
+max_players: int = 452 # from input
+last_marble_point: int = 70784 # from input
 player: int = 1
 current_marble: int = 1
 max_point: int = 0
