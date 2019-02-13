@@ -1,14 +1,14 @@
-'''
+"""
 Advent of Code - Day 16
 Author: Stefan Schneider
 Github: StefSchneider
-'''
+"""
 
 import re
 import collections # just for part two
 
-path_file: str = 'AoC2018_16_data_registers.txt'
-*samples, _, program = open(path_file).read().split('\n\n')
+path_file: str = "AoC2018_16_input.txt"
+*samples, _, program = open(path_file).read().split("\n\n")
 # use file with data for registers
 
 register_before: list = [0, 0 ,0, 0]
@@ -21,13 +21,13 @@ mapping: dict = {}
 delete_code: bool = False
 register_zero: int = 0
 
-OPCODES = ['addr', 'addi',
-           'mulr', 'muli',
-           'banr', 'bani',
-           'borr', 'bori',
-           'setr', 'seti',
-           'gtir', 'gtri', 'gtrr',
-           'eqir', 'eqri', 'eqrr']
+OPCODES = ["addr", "addi",
+           "mulr", "muli",
+           "banr", "bani",
+           "borr", "bori",
+           "setr", "seti",
+           "gtir", "gtri", "gtrr",
+           "eqir", "eqri", "eqrr"]
 
 
 def calculate_output_c(opcode: str, input_a: int, input_b: int, register_operate):
@@ -53,10 +53,10 @@ def calculate_output_c(opcode: str, input_a: int, input_b: int, register_operate
 
 def build_new_register(opcode: str, input_a: int, input_b: int, output_c: int, register_operate):
     register_operate = register_before[:]
-    print('Register before: ', register_before)
-    print('Opcode: ', opcode, '| Input A: ', input_a, '| Input B:', input_b, '| Output-Register:', output_c)
+    print("Register before:", register_before)
+    print("Opcode:", opcode, "| Input A:", input_a, "| Input B:", input_b, "| Output-Register:", output_c)
     register_operate[output_c] = calculate_output_c(opcode, input_a, input_b, register_operate)
-    print('Register after operation: ', register_operate)
+    print("Register after operation:", register_operate)
 
     return register_operate
 
@@ -73,16 +73,16 @@ def build_lib_keys() -> dict:
 
 build_lib_keys() # preparation for part two
 
-print('Starting part one...\r')
+print("Starting part one...\r")
 
 for sample in samples:
-    register_before, operation, register_after = map(lambda s: list(map(int, re.findall(r'-?\d+', s))), sample.splitlines())
+    register_before, operation, register_after = map(lambda s: list(map(int, re.findall(r"-?\d+", s))), sample.splitlines())
     count_opcodes: int = 0
     for command in range(0, len(OPCODES)):
-        print('New operation')
+        print("New operation")
         register_result = build_new_register(OPCODES[command], operation[1], operation[2], operation[3], register_operate)
         if register_result == register_after:
-            print('EQUAL REGISTERS AT OPCODE: ', OPCODES[command], operation[0])
+            print("EQUAL REGISTERS AT OPCODE: ", OPCODES[command], operation[0])
             count_opcodes += 1
             set_opcodes = set(library_keys[operation[0]])
             set_opcodes.add(OPCODES[command])
@@ -90,13 +90,14 @@ for sample in samples:
     if count_opcodes >= 3:
         triple_opcodes += 1
 
-print('\r')
-print('Examples with three or more opcodes: ', triple_opcodes)
+print("\r")
+print("Examples with three or more opcodes:", triple_opcodes)
 
+decision = input("Go on?")
 
 # ---------- PART TWO ----------
 
-print('Starting part two...\r')
+print("Starting part two...\r")
 
 while len(library_keys) > 0: # assigning opcodes to code numbers
     for number, codes in library_keys.items():
@@ -111,14 +112,14 @@ while len(library_keys) > 0: # assigning opcodes to code numbers
             i.discard(del_code)
         delete_code = False
 
-print('Assigned opcodes: ', mapping)
+print("Assigned opcodes:", mapping)
 
 register_before = [0, 0, 0, 0]
 
 for line in program.splitlines(): # operate part two
-    line = (re.split(r'\s', line))
+    line = (re.split(r"\s", line))
     opcode = mapping[int(line[0])]
     register_before = build_new_register(opcode, int(line[1]), int(line[2]), int(line[3]), register_before)
 
-print('\r')
-print('Last Value of register 0: ', register_before[0])
+print("\r")
+print("Last Value of register 0:", register_before[0])
