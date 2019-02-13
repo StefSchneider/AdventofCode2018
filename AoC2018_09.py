@@ -12,7 +12,7 @@ players_points: dict = {}
 max_point: int = 0
 
 
-def calculate_points(max_players: int, last_marble_point: int):
+def calculate_points(max_players: int, last_marble_point: int) -> int:
     current_marble: int = 1
     player: int = 1
     marbles = collections.deque([0]) # insert marble No. 0
