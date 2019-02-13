@@ -95,6 +95,7 @@ print("Examples with three or more opcodes:", triple_opcodes)
 
 decision = input("Go on?")
 
+
 # ---------- PART TWO ----------
 
 print("Starting part two...\r")
