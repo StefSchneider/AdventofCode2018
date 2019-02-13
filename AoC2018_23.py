@@ -4,7 +4,7 @@ Author: Stefan Schneider
 Github: StefSchneider
 """
 
-path_file: str = "AoC2018_23_data_nanobots.txt"
+path_file: str = "AoC2018_23_input.txt"
 nanobots: list = [] # creates an empty list for all nanobots
 max_radius: int = 0
 bot_number_max_radius: int = 0
