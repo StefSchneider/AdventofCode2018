@@ -5,6 +5,7 @@ Github: StefSchneider
 """
 
 grid_serial_number: int = 3613 # input
+grid: list = [[]]
 
 grid_energies: dict = {} # {[top, left]:grid_energy}
 
@@ -12,12 +13,13 @@ class Cell():
 
     def __init__(self, x_coordinate, y_coordinate):
         self.coordinate = x_coordinate
-        self.coordinate = y_coordinate =
+        self.coordinate = y_coordinate
         power_level: int = 0
-        grid_energy: int = 0
 
-    def __str__(self):
-        pass
+ #   def __str__(self, power_level):
+  #      self.power_level = power_level
+#
+ #       return self.power_level
 
     def calculate_power_level(self, x_coordinate: int, y_coordinate: int, grid_serial_number: int) -> int:
         self.x_coordinate = x_coordinate
@@ -47,3 +49,15 @@ class Cell():
                 grid_energy += cell[i][j].power_level
 
         return grid_energy
+
+
+for i in range(0, 30):
+    for j in range(0,30):
+        print(i,j)
+        grid_cell = Cell(i+1, j+1)
+        grid[i][j].insert(i)
+ #       grid.append(grid_cell)
+
+print(grid[0], type(grid[0]))
+
+
