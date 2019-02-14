@@ -43,14 +43,14 @@ with open(path_file, "r") as data_file:
 
 print("Starting part one...\r")
 
-for count in range(0, number_bot): # find bot with maximum radius
-    if nanobots[count].bot_radius > max_radius:
-        max_radius = nanobots[count].bot_radius
-        bot_number_max_radius = nanobots[count].number
+for i in range(0, number_bot): # find bot with maximum radius
+    if nanobots[i].bot_radius > max_radius:
+        max_radius = nanobots[i].bot_radius
+        bot_number_max_radius = nanobots[i].number
         print("New maximum radius:", max_radius, "of bot:", bot_number_max_radius)
 
-for count in range(0, number_bot): # counts every nanobot in range
-    if nanobots[count].sum_positions <= max_radius:
+for i in range(0, number_bot): # counts every nanobot in range
+    if nanobots[i].sum_positions <= max_radius:
         number_bots_in_range += 1
 
 if nanobots[bot_number_max_radius].sum_positions > max_radius: # includes nanobot with maximum radius
