@@ -5,21 +5,21 @@ Github: StefSchneider
 """
 
 grid_serial_number: int = 3613 # input
-grid: list = [[]]
+
+grid: list = []
 
 grid_energies: dict = {} # {[top, left]:grid_energy}
 
 class Cell():
 
     def __init__(self, x_coordinate, y_coordinate):
-        self.coordinate = x_coordinate
-        self.coordinate = y_coordinate
-        power_level: int = 0
+        self.x_coordinate = x_coordinate
+        self.y_coordinate = y_coordinate
+        self.power_level: int = 0
 
- #   def __str__(self, power_level):
-  #      self.power_level = power_level
-#
- #       return self.power_level
+    def __str__(self):
+
+        return self.x_coordinate, self.y_coordinate, self.power_level
 
     def calculate_power_level(self, x_coordinate: int, y_coordinate: int, grid_serial_number: int) -> int:
         self.x_coordinate = x_coordinate
@@ -35,7 +35,7 @@ class Cell():
         power_level *= rack_ID
         hundreds_digit = power_level // 100 #step 4
         power_level = int(str(hundreds_digit)[-1])
-        power_level -= 5 # step 5
+        power_level -= 5 # step 5#
 
         return power_level
 
@@ -43,21 +43,38 @@ class Cell():
     def calculate_grid_energy(self, x_coordinate: int, y_coordinate: int) -> int:
         self.x_coordinate = x_coordinate
         self.y_coordinate = y_coordinate
-        grid_energy: int = 0
-        for i in range(0, 3):
-            for j in range(0,3):
-                grid_energy += cell[i][j].power_level
+        self.grid_energy: int = 0
+        for x in range(0, 3):
+            for y in range(0,3):
+                self.grid_energy += grid[x_coordinate+x][y_coordinate+y].power_level
 
-        return grid_energy
+        return self.grid_energy
 
 
-for i in range(0, 30):
-    for j in range(0,30):
-        print(i,j)
+
+for i in range(0, 300):
+    column = []
+    for j in range(0,300):
         grid_cell = Cell(i+1, j+1)
-        grid[i][j].insert(i)
- #       grid.append(grid_cell)
-
-print(grid[0], type(grid[0]))
+        column.append(grid_cell)
+    grid.append(column)
 
 
+for x in range(1, 301):
+    for y in range(1, 301):
+        grid[x-1][y-1].power_level = grid_cell.calculate_power_level(x, y, grid_serial_number)
+
+
+for i in range(0, 297):
+    for j in range(0, 297):
+        window_energy = grid_cell.calculate_grid_energy(i+1, j+1)
+        grid_energies[(i+1,j+1)] = window_energy
+
+
+max_energy = sorted(grid_energies.values(), reverse = True)[0]
+
+s = [(k, grid_energies[k]) for k in sorted(grid_energies, key=grid_energies.get)]
+for k, v in s:
+    print(k, v)
+
+print(max_energy)
