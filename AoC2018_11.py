@@ -47,28 +47,33 @@ class Cell():
         for x in range(0, 3):
             for y in range(0,3):
                 self.grid_energy += grid[x_coordinate+x][y_coordinate+y].power_level
-
+                print(x_coordinate+x, y_coordinate+y, grid[x_coordinate+x][y_coordinate+y].power_level)
+        print(self.grid_energy)
         return self.grid_energy
 
 
 
-for i in range(0, 300):
+for j in range(0, 300):
     column = []
-    for j in range(0,300):
+    for i in range(0,300):
         grid_cell = Cell(i+1, j+1)
         column.append(grid_cell)
+ #       print(i, j, grid_cell.x_coordinate, grid_cell.y_coordinate)
     grid.append(column)
 
+print('Start power level')
 
-for x in range(1, 301):
-    for y in range(1, 301):
+for y in range(1, 301):
+    for x in range(1, 301):
         grid[x-1][y-1].power_level = grid_cell.calculate_power_level(x, y, grid_serial_number)
+        print(grid_cell.x_coordinate, grid_cell.y_coordinate, grid[x-1][y-1].power_level)
+
 
 
 for i in range(0, 297):
     for j in range(0, 297):
-        window_energy = grid_cell.calculate_grid_energy(i+1, j+1)
-        grid_energies[(i+1,j+1)] = window_energy
+        window_energy = grid_cell.calculate_grid_energy(j, i)
+        grid_energies[(j+1,i+1)] = window_energy
 
 
 max_energy = sorted(grid_energies.values(), reverse = True)[0]
