@@ -1,7 +1,7 @@
 """
 Advent of Code 2018 - Day 2
 Author: Stefan Schneider
-github stefschneider1970
+github StefSchneider
 """
 
 import operator
