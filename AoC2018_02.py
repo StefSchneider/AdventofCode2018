@@ -57,18 +57,3 @@ for elements in combi:
     if differenz == 1:
         print(diff_content)
         print(elements[0], elements[1])
-
-
-
-
-
-
-
-
-#    schnittmenge = set(elements[0])-set(elements[1])
-#    diff_1 = set(elements[0])-schnittmenge
-#    diff_2 = set(elements[1])-schnittmenge
-#    if (len(schnittmenge) > 1) and (diff_1 == diff_2) and (len(diff_1) == len(elements[0])-1):
-#        print(schnittmenge)
-#        print((set(elements[0])-schnittmenge), (set(elements[1])-schnittmenge))
-#        print(elements)
