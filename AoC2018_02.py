@@ -4,7 +4,6 @@ Author: Stefan Schneider
 github StefSchneider
 """
 
-import operator
 from collections import Counter
 import itertools # only for Part 2
 
@@ -44,16 +43,19 @@ print("\r")
 
 print("Starting part two...\r")
 
-combi = itertools.combinations(data_file, 2)
-for elements in combi:
-    diff_1 = False
-    differenz = 0
-    diff_content = []
+string_combination = itertools.combinations(data_file, 2) # combine every line of input with all others
+for elements in string_combination:
+    difference: int = 0
+    difference_position: int = 0
+    difference_content: list = []
+    final_string: str = ""
     for i in range(len(elements[0])):
         if (elements[0])[i] != (elements[1])[i]:
-            differenz += 1
-            diff_content.append((elements[0])[i])
-            diff_content.append((elements[1])[i])
-    if differenz == 1:
-        print(diff_content)
-        print(elements[0], elements[1])
+            difference += 1
+            difference_position = i
+            difference_content.append((elements[0])[i])
+            difference_content.append((elements[1])[i])
+    if difference == 1:
+        print("Elements", elements[0], "and", elements[1], "differ in:", difference_content)
+        final_string = elements[0][0:difference_position]+elements[0][difference_position+1:]
+        print("Solution of part two:", final_string)
