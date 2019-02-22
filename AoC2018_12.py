@@ -22,6 +22,7 @@ class Pot():
 
         return self.content
 
+
 # ---------- PART ONE ----------
 
 print("Starting part one...\r")
@@ -51,7 +52,6 @@ for round in range(20): # for 20 generations
     number_pot = []
     sum_pots = 0
     new_list = []
-    print("Round:", round+1)
 
     for count in range(0, len(current_list)): # fills new list with empty content and number of pots
         pot = Pot(".", current_list[count].number - 1)
@@ -82,7 +82,8 @@ for round in range(20): # for 20 generations
             sum_pots += current_list[count].number
     print("Pots current generation:", current_generation)
     print("Number of Pots", number_pot)
-    print('Sum of Pots with plant: ',sum_pots)
+    print("\r")
+    print('Sum of Pots with plant:',sum_pots, "after generation", round+1)
     print("\r")
 
 
@@ -90,5 +91,6 @@ for round in range(20): # for 20 generations
 
 print("Starting part two...\r")
 
-
-
+# result after 500 generatons: 32405, continuous growth after generation 140
+# increase every 500 generations: 31500
+print("Final result after 50000000000 generations:", int(((50000000000/500)-1)*31500+32405))
