@@ -16,6 +16,7 @@ current_shift = numpy.zeros((1,60), int)
 max_minutes: int = 0
 sum_minutes: int = 0
 max_minute_guard: int = 0
+final_minute: int = 0
 
 
 def parse_minutes(date_time: str) -> int: # extracts number of minutes from string
@@ -81,4 +82,31 @@ print("Max. minutes", max_minutes)
 sum_array = numpy.copy(guards_shifts[max_minute_guard])
 print(sum_array)
 length = sum_array.size
-print(numpy.sum(sum_array, axis=0))
+result_list = list(numpy.sum(sum_array, axis=0))
+for i in range(0, len(result_list)):
+    if result_list[i] > final_minute:
+        final_minute = result_list[i]
+        pos_final_minute = i
+
+print(list(numpy.sum(sum_array, axis=0)))
+print(max_minute_guard, pos_final_minute, max_minute_guard*pos_final_minute)
+
+sleep_guard = 0
+final_minute = 0
+result_guard = 0
+result_minute = 0
+result_pos = 0
+for all_guards in guards_shifts:
+    print(all_guards, guards_shifts[all_guards])
+    sum_array = numpy.copy(guards_shifts[all_guards])
+    result_list = list(numpy.sum(sum_array, axis=0))
+    for i in range(0, len(result_list)):
+        if result_list[i] > final_minute:
+            final_minute = result_list[i]
+            pos_final_minute = i
+    if final_minute > result_minute:
+        result_minute = final_minute
+        result_guard = all_guards
+        result_pos = pos_final_minute
+
+print(result_guard, result_pos, result_guard*result_pos)
