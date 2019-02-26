@@ -7,16 +7,19 @@ Github: StefSchneider
 import numpy
 
 path_file: str = "AoC2018_04_input.txt"
-guard_number: int = 0
-empty_shift = numpy.zeros((1,60), int)
+guard_ID: int = 0
+empty_shift = numpy.zeros((1,60), int) # creates an empty shift
 shifts = numpy.array((1,60), int)
-guards_shifts: dict = {} # guard : shift
-awake_asleep: int = 0
+guards_shifts: dict = {}
+awake_asleep: int = 0 # minutes asleep = 1, minutes awake = 1
 current_shift = numpy.zeros((1,60), int)
-max_minutes: int = 0
-sum_minutes: int = 0
-max_minute_guard: int = 0
-final_minute: int = 0
+guard_ID_max_minute: int = 0 # guard with maximum minutes on sleep (part one)
+max_minute_guard: int = 0 # maximum minute guard is on sleep (part two)
+final_minute: int = 0 # minute of all a guard is most asleep
+maximum_minute: int = 0
+max_minutes_per_guard: int = 0
+list_minutes: list = []
+pos_max_minute: int = 0
 
 
 def parse_minutes(date_time: str) -> int: # extracts number of minutes from string
@@ -29,84 +32,72 @@ def parse_minutes(date_time: str) -> int: # extracts number of minutes from stri
     return minutes
 
 
-def change_shift(current_shift, minutes: int, awake_asleep: int):
-    length = int(current_shift.size)
-    for i in range(minutes, length):
-        current_shift[0][i] = awake_asleep
-    return current_shift
+def find_pos_maximum(list_to_check: list) -> int: # finds number of minute most alseep
+    maximum_minute: int = 0
+    pos_maximum: int = 0
+    for i in range(0, len(list_to_check)):
+        if list_to_check[i] > maximum_minute:
+            maximum_minute = list_to_check[i]
+            pos_maximum = i
 
-data_file = open(path_file).read().split("\n")
-# use file with data for shifts
+    return pos_maximum
 
-data_file.remove("")
+
+print("Build shifts...")
+print("\r")
+
+data_file = open(path_file).read().split("\n") # use file with data for shifts
 data_file.sort()
-print(data_file)
 for line in data_file:
-    print(line)
     parts = line.split("] ")
-    parts[0] = parts[0].lstrip("[")
-    date_time = parts[0]
-    print(date_time)
-    code = parts[1]
+    date_time = parts[0].lstrip("[")
     minutes = parse_minutes(date_time)
-    code = code.split(" ")
-    print(minutes, code)
-    if code[0] == "Guard":
-        shift = guards_shifts.get(guard_number, empty_shift)
-        shift = numpy.vstack((shift, current_shift))
-        guards_shifts[guard_number] = shift
-        print(guard_number, shift)
-#        weiter = input()
-        guard_number = int(code[1][1:])
+    code = parts[1].split(" ")
+    if code[0] == "Guard" or data_file == None:
+        shift = guards_shifts.get(guard_ID, empty_shift) # if guard is not in dictionary default = empty shift
+        if not numpy.array_equal(current_shift, empty_shift):
+            shift = numpy.vstack((shift, current_shift)) # adds new shift to shifts of current guard
+        guards_shifts[guard_ID] = shift
+        guard_ID = int(code[1][1:])
         current_shift = numpy.copy(empty_shift)
         awake_asleep = 0
     elif code[0] == "falls":
-        awake_asleep = 1
+        awake_asleep = 1 # set minutes guard is asleep on 1
     elif code[0] == "wakes":
-        awake_asleep = 0
+        awake_asleep = 0 # set  minutes guard is awake on 0
+    for i in range(minutes, int(current_shift.size)): # update shift of guard
+        current_shift[0][i] = awake_asleep
 
-    current_shift = change_shift(current_shift, minutes, awake_asleep)
+
+# ---------- PART ONE ----------
+
+print("Starting part one...\r")
+
+for guard in guards_shifts: # pick guard with most minutes of sleep
+    if numpy.sum(guards_shifts[guard]) > max_minutes_per_guard:
+        max_minutes_per_guard = numpy.sum(guards_shifts[guard])
+        guard_ID_max_minute = guard
+
+sum_array = numpy.sum(guards_shifts[guard_ID_max_minute], axis=0)
+print("Guard with maximum minutes on sleep:", guard_ID_max_minute,)
+print("Minute with maximum sleep:", find_pos_maximum(list(sum_array)))
+print("Result of part one:", guard_ID_max_minute*find_pos_maximum(list(sum_array)))
+print("\r")
 
 
-print("Shifts")
-for i in guards_shifts:
-    print(i, guards_shifts[i])
-    sum_minutes = numpy.sum(guards_shifts[i])
-    if sum_minutes > max_minutes:
-        max_minutes = sum_minutes
-        max_minute_guard = i
+# ---------- PART TWO ----------
 
-print("Max guard", max_minute_guard)
-print("Max. minutes", max_minutes)
+print("Starting part two...\r")
 
-sum_array = numpy.copy(guards_shifts[max_minute_guard])
-print(sum_array)
-length = sum_array.size
-result_list = list(numpy.sum(sum_array, axis=0))
-for i in range(0, len(result_list)):
-    if result_list[i] > final_minute:
-        final_minute = result_list[i]
-        pos_final_minute = i
+for guard in guards_shifts:
+    list_minutes = list(numpy.sum(guards_shifts[guard], axis = 0))
+    maximum_minute_guard = max(list_minutes)
+    pos_max_minute = find_pos_maximum(list_minutes)
+    if maximum_minute_guard > maximum_minute:
+        maximum_minute = maximum_minute_guard
+        guard_ID_max_minute = guard
+        final_pos = pos_max_minute
 
-print(list(numpy.sum(sum_array, axis=0)))
-print(max_minute_guard, pos_final_minute, max_minute_guard*pos_final_minute)
-
-sleep_guard = 0
-final_minute = 0
-result_guard = 0
-result_minute = 0
-result_pos = 0
-for all_guards in guards_shifts:
-    print(all_guards, guards_shifts[all_guards])
-    sum_array = numpy.copy(guards_shifts[all_guards])
-    result_list = list(numpy.sum(sum_array, axis=0))
-    for i in range(0, len(result_list)):
-        if result_list[i] > final_minute:
-            final_minute = result_list[i]
-            pos_final_minute = i
-    if final_minute > result_minute:
-        result_minute = final_minute
-        result_guard = all_guards
-        result_pos = pos_final_minute
-
-print(result_guard, result_pos, result_guard*result_pos)
+print("Guard with minute with maximum on sleep:", guard_ID_max_minute)
+print("Minute with maximum sleep:", final_pos)
+print("Result of part two:", guard_ID_max_minute*final_pos)
