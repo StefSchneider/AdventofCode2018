@@ -43,7 +43,7 @@ def find_pos_maximum(list_to_check: list) -> int: # finds number of minute most 
     return pos_maximum
 
 
-print("Build shifts...")
+print("Build shifts from input...")
 print("\r")
 
 data_file = open(path_file).read().split("\n") # use file with data for shifts
