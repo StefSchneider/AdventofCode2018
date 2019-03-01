@@ -17,7 +17,7 @@ position_first_child: int = 0
 path_file: str = "AoC2018_08_input_test.txt"
 
 
-data_file = open(path_file).read().split(" ")
+data_file = list(map(int, open(path_file).read().split(" ")))
 print(data_file)
 node_data = (int(data_file[0]), int(data_file[1]), int(data_file[2]))
 nodes.append(node_data)
