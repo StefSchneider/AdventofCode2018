@@ -17,21 +17,27 @@ position_first_child: int = 0
 path_file: str = "AoC2018_08_input_test.txt"
 
 
-data_file = open(path_file).read().split(" ")
+data_file = list(map(int, open(path_file).read().split(" ")))
 print(data_file)
-while pointer < len(data_file)-1:
-    number_children = node_data[0]
+node_data = (data_file[0], data_file[1], data_file[2]) # initial node
+nodes.append(node_data)
+#while pointer < len(data_file)-1:
+while len(nodes) > 0:
+    current_node = nodes.popleft()
+    number_children = current_node[0]
+    number_metadata = current_node[1]
+    position_first_child = current_node[2]
     for i in range(1, number_children):
-        node_data = (int(data_file[pointer]), int(data_file[pointer + 1]), int(data_file[pointer + 2]))
+        node_data = (data_file[pointer], data_file[pointer + 1], data_file[pointer + 2])
 
     if number_children > 0:
         pointer += 2+node_data[1]
         number_children -= 1
         for i in range(0, node_data[1]):
-            sum_metadata += int(data_file[pointer+i])
+            sum_metadata += data_file[pointer+i]
     else:
         for i in range(0, node_data[1]):
-            sum_metadata += int(data_file.pop())
+            sum_metadata += data_file.pop()
             print(sum_metadata)
 
     print(node_data)
@@ -40,9 +46,15 @@ while pointer < len(data_file)-1:
 # nodes.append(node_data)
 """
 Regeln:
-- Start 1. Knoten auf pos 1
-- pos Start + 1: Anzahl Kinder
-- pos Start + 2: Anzahl Matadaten von Ende
+- Der erste Knoten startet auf Pos. 1
+- Die Anzahl der Kinder wird von der 1. Position eines Knotens eingelsen
+- Die Zahl der Metadaten wird von der 2. Position eines Knotens eingelesen
+- Ein neues Kind startet direkt ab der dritten Position eines Kindes
+- Die Metadaten eines Knotens werden direkt nach der Stelle, an der die Anzahl steht, ausgelesen, aber nicht gelöscht.
+    Ausnahme: Beim letzten Knoten in einer Hierarchie werden die Metadaten von hinten ausgelesen und anschließend gelöscht 
+- Für jedes Kind wird ein eigener Knoten angelegt und ans Ende der Queue gehangen
+- der erste Knoten der Queue ist der aktuell zu bearbeitende Knoten
+- die Schleife wird solange durchlaufen, bis die Queue auf Null ist -> Folge: Es muss eine initiale Befüllung der Queue mit dem ersten Knoten geben
 
 
 
