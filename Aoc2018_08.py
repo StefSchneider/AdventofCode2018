@@ -19,7 +19,7 @@ path_file: str = "AoC2018_08_input_test.txt"
 
 data_file = list(map(int, open(path_file).read().split(" ")))
 print(data_file)
-node_data = (int(data_file[0]), int(data_file[1]), int(data_file[2])) # initial node
+node_data = (data_file[0], data_file[1], data_file[2]) # initial node
 nodes.append(node_data)
 #while pointer < len(data_file)-1:
 while len(nodes) > 0:
@@ -28,16 +28,16 @@ while len(nodes) > 0:
     number_metadata = current_node[1]
     position_first_child = current_node[2]
     for i in range(1, number_children):
-        node_data = (int(data_file[pointer]), int(data_file[pointer + 1]), int(data_file[pointer + 2]))
+        node_data = (data_file[pointer], data_file[pointer + 1], data_file[pointer + 2]
 
     if number_children > 0:
         pointer += 2+node_data[1]
         number_children -= 1
         for i in range(0, node_data[1]):
-            sum_metadata += int(data_file[pointer+i])
+            sum_metadata += data_file[pointer+i]
     else:
         for i in range(0, node_data[1]):
-            sum_metadata += int(data_file.pop())
+            sum_metadata += data_file.pop()
             print(sum_metadata)
 
     print(node_data)
