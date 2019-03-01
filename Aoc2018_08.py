@@ -28,7 +28,7 @@ while len(nodes) > 0:
     number_metadata = current_node[1]
     position_first_child = current_node[2]
     for i in range(1, number_children):
-        node_data = (data_file[pointer], data_file[pointer + 1], data_file[pointer + 2]
+        node_data = (data_file[pointer], data_file[pointer + 1], data_file[pointer + 2])
 
     if number_children > 0:
         pointer += 2+node_data[1]
