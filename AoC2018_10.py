@@ -22,11 +22,12 @@ finde alle Ziffern zwischen "<" und ">"
 data_file = open(path_file).read()
 data_file = re.split(r"\n", data_file)
 data_file.remove("")
-for line in data_file:
-    position, velocity = re.findall(r"(<?\w*>)", line) #, velocity
-    print(position, velocity) #, velocity
+for i in range(0, 20):
+    for line in data_file:
+        pos_x, pos_y, velo_x, velo_y = re.findall(r"(-?\d+)", line)
+        max_x = pos_x+i*velo_x
+        max_y = pos_y+i*velo_y
 
 
-print(data_file)
 
-#for line in data_file:
+# abs()
