@@ -20,6 +20,7 @@ def parse_data():
 print("Result of part one:", sum(all_metadata))
 
 
+
 """
 rekursive Lösung:
 
