@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40858b80-5194-4bb1-a1ff-9754bc580509" name="Default Changelist" comment="">
+    <list default="true" id="40858b80-5194-4bb1-a1ff-9754bc580509" name="Default Changelist" comment="Day 08">
+      <change afterPath="$PROJECT_DIR$/AoC2018_08_help.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/AdventofCode2018.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AdventofCode2018.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AoC2018_09.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2018_09.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,29 +14,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AoC2018_21.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="4" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AoC2018_09.py">
+        <entry file="file://$PROJECT_DIR$/AoC2018_08.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="45" column="62" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
+            <state relative-caret-position="-479">
+              <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AoC2018_05.py">
+        <entry file="file://$PROJECT_DIR$/AoC2018_08_help.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="595">
+              <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AoC2018_10.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="39" selection-start-line="8" selection-end-line="8" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -52,6 +53,10 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>register_current</find>
+      <find>29</find>
+      <find>(0, 0)</find>
+      <find>1289</find>
+      <find>449</find>
     </findStrings>
     <replaceStrings>
       <replace>register_operate</replace>
@@ -70,23 +75,35 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/testdict.py" />
-        <option value="$PROJECT_DIR$/AoC2018_23.py" />
-        <option value="$PROJECT_DIR$/AoC2018_12.py" />
-        <option value="$PROJECT_DIR$/AoC2018_05.py" />
-        <option value="$PROJECT_DIR$/AoC2018_04.py" />
         <option value="$PROJECT_DIR$/Aoc2018_19_help.py" />
         <option value="$PROJECT_DIR$/AoC2018_19_factor_division.py" />
-        <option value="$PROJECT_DIR$/AoC2018_16.py" />
         <option value="$PROJECT_DIR$/AoC2018_19.py" />
         <option value="$PROJECT_DIR$/AoC2018_21.py" />
         <option value="$PROJECT_DIR$/test array.py" />
         <option value="$PROJECT_DIR$/AoC2018_01_input.txt" />
-        <option value="$PROJECT_DIR$/AoC2018_02.py" />
-        <option value="$PROJECT_DIR$/AoC2018_02_input.txt" />
         <option value="$PROJECT_DIR$/AoC2018_01.py" />
         <option value="$PROJECT_DIR$/AoC2018_03.py" />
         <option value="$PROJECT_DIR$/AoC2018_03_input_test.txt" />
+        <option value="$PROJECT_DIR$/AoC2018_02_input.txt" />
+        <option value="$PROJECT_DIR$/AoC2018_05.py" />
+        <option value="$PROJECT_DIR$/AoC2018_21_input.txt" />
+        <option value="$PROJECT_DIR$/AoC2018_19_input.txt" />
+        <option value="$PROJECT_DIR$/AoC2018_19_input_test.txt" />
+        <option value="$PROJECT_DIR$/AoC2018_16.py" />
         <option value="$PROJECT_DIR$/AoC2018_09.py" />
+        <option value="$PROJECT_DIR$/AoC2018_test_23.py" />
+        <option value="$PROJECT_DIR$/AoC2018_23.py" />
+        <option value="$PROJECT_DIR$/AoC2019_11_help.py" />
+        <option value="$PROJECT_DIR$/AoC2018_11.py" />
+        <option value="$PROJECT_DIR$/AoC2018_02.py" />
+        <option value="$PROJECT_DIR$/AoC2018_12.py" />
+        <option value="$PROJECT_DIR$/AoC2018_04_input.txt" />
+        <option value="$PROJECT_DIR$/AoC2018_04.py" />
+        <option value="$PROJECT_DIR$/AoC2018_10_input.txt" />
+        <option value="$PROJECT_DIR$/AoC2018_10.py" />
+        <option value="$PROJECT_DIR$/Aoc2018_08.py" />
+        <option value="$PROJECT_DIR$/AoC2018_08_help.py" />
+        <option value="$PROJECT_DIR$/AoC2018_08.py" />
       </list>
     </option>
   </component>
@@ -101,23 +118,10 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="AdventofCode2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdventofCode2018" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Tutorials" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/AoC2018_04.py" />
   </component>
@@ -141,8 +145,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.AoC2018_09">
-    <configuration name="AoC2018_01" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.AoC2018_08">
+    <configuration name="AoC2018_04" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AdventofCode2018" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -154,7 +158,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AoC2018_01.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AoC2018_04.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,7 +167,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="AoC2018_02" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="AoC2018_08" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AdventofCode2018" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -175,7 +179,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AoC2018_02.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AoC2018_08.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -184,7 +188,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="AoC2018_03" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="AoC2018_08_help" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AdventofCode2018" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -196,7 +200,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AoC2018_03.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AoC2018_08_help.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -205,7 +209,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="AoC2018_09" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="AoC2018_10" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AdventofCode2018" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -217,7 +221,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AoC2018_09.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AoC2018_10.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -226,7 +230,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="AoC2018_19" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Aoc2018_08" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AdventofCode2018" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -238,7 +242,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AoC2018_19.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Aoc2018_08.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -249,11 +253,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.AoC2018_09" />
-        <item itemvalue="Python.AoC2018_19" />
-        <item itemvalue="Python.AoC2018_03" />
-        <item itemvalue="Python.AoC2018_02" />
-        <item itemvalue="Python.AoC2018_01" />
+        <item itemvalue="Python.AoC2018_08" />
+        <item itemvalue="Python.AoC2018_08_help" />
+        <item itemvalue="Python.Aoc2018_08" />
+        <item itemvalue="Python.AoC2018_10" />
+        <item itemvalue="Python.AoC2018_04" />
       </list>
     </recent_temporary>
   </component>
@@ -268,339 +272,353 @@
       <option name="presentableId" value="Default" />
       <updated>1546617783570</updated>
     </task>
-    <task id="LOCAL-00001" summary="Day 4">
-      <created>1547496909131</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
+    <task id="LOCAL-00066" summary="Day 21 - steps">
+      <created>1550079680229</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
       <option name="project" value="LOCAL" />
-      <updated>1547496909131</updated>
+      <updated>1550079680229</updated>
     </task>
-    <task id="LOCAL-00002" summary="Day 3">
-      <created>1547497207141</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
+    <task id="LOCAL-00067" summary="Day 19 - input">
+      <created>1550079745155</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
       <option name="project" value="LOCAL" />
-      <updated>1547497207141</updated>
+      <updated>1550079745155</updated>
     </task>
-    <task id="LOCAL-00003" summary="Day 2">
-      <created>1547497316193</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
+    <task id="LOCAL-00068" summary="Day 19 - input test">
+      <created>1550079793209</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
       <option name="project" value="LOCAL" />
-      <updated>1547497316193</updated>
+      <updated>1550079793209</updated>
     </task>
-    <task id="LOCAL-00004" summary="Day 16">
-      <created>1547497382431</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
+    <task id="LOCAL-00069" summary="Day 19 - steps">
+      <created>1550079849429</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
       <option name="project" value="LOCAL" />
-      <updated>1547497382431</updated>
+      <updated>1550079849429</updated>
     </task>
-    <task id="LOCAL-00005" summary="Day 16">
-      <created>1547497986397</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
+    <task id="LOCAL-00070" summary="Day 23 - just part one">
+      <created>1550080272816</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
       <option name="project" value="LOCAL" />
-      <updated>1547497986397</updated>
+      <updated>1550080272816</updated>
     </task>
-    <task id="LOCAL-00006" summary="Day 5">
-      <created>1547498518425</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
+    <task id="LOCAL-00071" summary="Day 23 - just part one">
+      <created>1550080326458</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
       <option name="project" value="LOCAL" />
-      <updated>1547498518425</updated>
+      <updated>1550080326458</updated>
     </task>
-    <task id="LOCAL-00007" summary="Day 05 new">
-      <created>1547501177129</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
+    <task id="LOCAL-00072" summary="Day 16 - final complete solution">
+      <created>1550080948011</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
       <option name="project" value="LOCAL" />
-      <updated>1547501177129</updated>
+      <updated>1550080948011</updated>
     </task>
-    <task id="LOCAL-00008" summary="Day 16">
-      <created>1547501280038</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
+    <task id="LOCAL-00073" summary="Day 16 - final solution complete">
+      <created>1550081001356</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
       <option name="project" value="LOCAL" />
-      <updated>1547501280038</updated>
+      <updated>1550081001356</updated>
     </task>
-    <task id="LOCAL-00009" summary="Day 16">
-      <created>1547502372529</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
+    <task id="LOCAL-00074" summary="Day 09 - final solution complete">
+      <created>1550081068685</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
       <option name="project" value="LOCAL" />
-      <updated>1547502372529</updated>
+      <updated>1550081068685</updated>
     </task>
-    <task id="LOCAL-00010" summary="Day 4 update">
-      <created>1547535755394</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
+    <task id="LOCAL-00075" summary="Day 09 - final solution complete">
+      <created>1550081091011</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
       <option name="project" value="LOCAL" />
-      <updated>1547535755395</updated>
+      <updated>1550081091011</updated>
     </task>
-    <task id="LOCAL-00011" summary="Day 05">
-      <created>1547535949719</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
+    <task id="LOCAL-00076" summary="Day 23 - test">
+      <created>1550081201034</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
       <option name="project" value="LOCAL" />
-      <updated>1547535949720</updated>
+      <updated>1550081201034</updated>
     </task>
-    <task id="LOCAL-00012" summary="Day 04">
-      <created>1547536998208</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
+    <task id="LOCAL-00077" summary="Day 11">
+      <created>1550094314488</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
       <option name="project" value="LOCAL" />
-      <updated>1547536998208</updated>
+      <updated>1550094314488</updated>
     </task>
-    <task id="LOCAL-00013" summary="Day 16 final">
-      <created>1547844021945</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
+    <task id="LOCAL-00078" summary="Day 23 - just part one">
+      <created>1550145605757</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
       <option name="project" value="LOCAL" />
-      <updated>1547844021945</updated>
+      <updated>1550145605758</updated>
     </task>
-    <task id="LOCAL-00014" summary="Day 19">
-      <created>1548968027197</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
+    <task id="LOCAL-00079" summary="Day 11">
+      <created>1550147495141</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
       <option name="project" value="LOCAL" />
-      <updated>1548968027198</updated>
+      <updated>1550147495141</updated>
     </task>
-    <task id="LOCAL-00015" summary="Day 19">
-      <created>1549124876377</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
+    <task id="LOCAL-00080" summary="Day 11">
+      <created>1550316915015</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
       <option name="project" value="LOCAL" />
-      <updated>1549124876377</updated>
+      <updated>1550316915016</updated>
     </task>
-    <task id="LOCAL-00016" summary="Day 21">
-      <created>1549397217982</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
+    <task id="LOCAL-00081" summary="Day 11 - just part one">
+      <created>1550409569077</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
       <option name="project" value="LOCAL" />
-      <updated>1549397217982</updated>
+      <updated>1550409569079</updated>
     </task>
-    <task id="LOCAL-00017" summary="Day 21">
-      <created>1549397335258</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
+    <task id="LOCAL-00082" summary="Day 02 - just part one">
+      <created>1550557339967</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
       <option name="project" value="LOCAL" />
-      <updated>1549397335258</updated>
+      <updated>1550557339968</updated>
     </task>
-    <task id="LOCAL-00018" summary="Day 21">
-      <created>1549397781090</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
+    <task id="LOCAL-00083" summary="Day 11 - slow version without numpy">
+      <created>1550557378710</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
       <option name="project" value="LOCAL" />
-      <updated>1549397781092</updated>
+      <updated>1550557378710</updated>
     </task>
-    <task id="LOCAL-00019" summary="Day 21">
-      <created>1549529278316</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
+    <task id="LOCAL-00084" summary="Day 11 - help">
+      <created>1550557406318</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
       <option name="project" value="LOCAL" />
-      <updated>1549529278316</updated>
+      <updated>1550557406318</updated>
     </task>
-    <task id="LOCAL-00020" summary="Day 01 - final solution">
-      <created>1549570869848</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
+    <task id="LOCAL-00085" summary="Day 11">
+      <created>1550561004862</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
       <option name="project" value="LOCAL" />
-      <updated>1549570869848</updated>
+      <updated>1550561004862</updated>
     </task>
-    <task id="LOCAL-00021" summary="Day 01 - input">
-      <created>1549570974782</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
+    <task id="LOCAL-00086" summary="Day 11 old">
+      <created>1550605784053</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
       <option name="project" value="LOCAL" />
-      <updated>1549570974782</updated>
+      <updated>1550605784053</updated>
     </task>
-    <task id="LOCAL-00022" summary="Day 01 - input">
-      <created>1549571097638</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
+    <task id="LOCAL-00087" summary="Day 11 - final solution complete">
+      <created>1550606582502</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
       <option name="project" value="LOCAL" />
-      <updated>1549571097639</updated>
+      <updated>1550606582502</updated>
     </task>
-    <task id="LOCAL-00023" summary="Day 01 - input">
-      <created>1549571257877</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
+    <task id="LOCAL-00088" summary="Day 02">
+      <created>1550647251082</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
       <option name="project" value="LOCAL" />
-      <updated>1549571257877</updated>
+      <updated>1550647251085</updated>
     </task>
-    <task id="LOCAL-00024" summary="Day 01 - input">
-      <created>1549571313689</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
+    <task id="LOCAL-00089" summary="Day 02">
+      <created>1550647309362</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
       <option name="project" value="LOCAL" />
-      <updated>1549571313689</updated>
+      <updated>1550647309363</updated>
     </task>
-    <task id="LOCAL-00025" summary="Day 01 - final solution">
-      <created>1549571721423</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
+    <task id="LOCAL-00090" summary="Day 02 - final solution complete">
+      <created>1550732316355</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
       <option name="project" value="LOCAL" />
-      <updated>1549571721423</updated>
+      <updated>1550732316356</updated>
     </task>
-    <task id="LOCAL-00026" summary="Day 01 - input">
-      <created>1549571944943</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
+    <task id="LOCAL-00091" summary="Day 12 - final solution complete">
+      <created>1550864115596</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
       <option name="project" value="LOCAL" />
-      <updated>1549571944943</updated>
+      <updated>1550864115597</updated>
     </task>
-    <task id="LOCAL-00027" summary="Day 02 - just part one">
-      <created>1549572290649</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
+    <task id="LOCAL-00092" summary="Day 04">
+      <created>1550902683189</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
       <option name="project" value="LOCAL" />
-      <updated>1549572290652</updated>
+      <updated>1550902683189</updated>
     </task>
-    <task id="LOCAL-00028" summary="Day 02 - input">
-      <created>1549572406092</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
+    <task id="LOCAL-00093" summary="Day 04 - input">
+      <created>1550902732982</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
       <option name="project" value="LOCAL" />
-      <updated>1549572406092</updated>
+      <updated>1550902732982</updated>
     </task>
-    <task id="LOCAL-00029" summary="Day 2 - input">
-      <created>1549654812326</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
+    <task id="LOCAL-00094" summary="Day 04">
+      <created>1550990907650</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
       <option name="project" value="LOCAL" />
-      <updated>1549654812327</updated>
+      <updated>1550990907651</updated>
     </task>
-    <task id="LOCAL-00030" summary="Day 03 - solution part one">
-      <created>1549785156807</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
+    <task id="LOCAL-00095" summary="Day 04">
+      <created>1550999114152</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
       <option name="project" value="LOCAL" />
-      <updated>1549785156807</updated>
+      <updated>1550999114154</updated>
     </task>
-    <task id="LOCAL-00031" summary="Day 03 - input">
-      <created>1549785196364</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
+    <task id="LOCAL-00096" summary="Day 04 - just part one">
+      <created>1551033483724</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
       <option name="project" value="LOCAL" />
-      <updated>1549785196364</updated>
+      <updated>1551033483725</updated>
     </task>
-    <task id="LOCAL-00032" summary="Day 03 - input">
-      <created>1549785253035</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
+    <task id="LOCAL-00097" summary="Day 04">
+      <created>1551122105174</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
       <option name="project" value="LOCAL" />
-      <updated>1549785253035</updated>
+      <updated>1551122105175</updated>
     </task>
-    <task id="LOCAL-00033" summary="Day 01 - final solution">
-      <created>1549785330040</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
+    <task id="LOCAL-00098" summary="Day 04 - final solution complete">
+      <created>1551215247793</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
       <option name="project" value="LOCAL" />
-      <updated>1549785330041</updated>
+      <updated>1551215247794</updated>
     </task>
-    <task id="LOCAL-00034" summary="Day 01 - final solution">
-      <created>1549785370357</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
+    <task id="LOCAL-00099" summary="Day 04 - input">
+      <created>1551215269423</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
       <option name="project" value="LOCAL" />
-      <updated>1549785370369</updated>
+      <updated>1551215269423</updated>
     </task>
-    <task id="LOCAL-00035" summary="Day 01 - final solution">
-      <created>1549785387470</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
+    <task id="LOCAL-00100" summary="Day 04 - input test data">
+      <created>1551215326286</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
       <option name="project" value="LOCAL" />
-      <updated>1549785387470</updated>
+      <updated>1551215326286</updated>
     </task>
-    <task id="LOCAL-00036" summary="Day 01 - final solution">
-      <created>1549785402318</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
+    <task id="LOCAL-00101" summary="Day 12 - steps">
+      <created>1551215378822</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
       <option name="project" value="LOCAL" />
-      <updated>1549785402318</updated>
+      <updated>1551215378822</updated>
     </task>
-    <task id="LOCAL-00037" summary="Day 01 - final solution complete">
-      <created>1549785538210</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
+    <task id="LOCAL-00102" summary="Day 04 - final solution complete">
+      <created>1551215465597</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
       <option name="project" value="LOCAL" />
-      <updated>1549785538210</updated>
+      <updated>1551215465597</updated>
     </task>
-    <task id="LOCAL-00038" summary="Day 03 -">
-      <created>1549806816898</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
+    <task id="LOCAL-00103" summary="Day 10">
+      <created>1551252208392</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
       <option name="project" value="LOCAL" />
-      <updated>1549806816898</updated>
+      <updated>1551252208393</updated>
     </task>
-    <task id="LOCAL-00039" summary="Day 03 - final solution complete">
-      <created>1549812949994</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
+    <task id="LOCAL-00104" summary="Day 08">
+      <created>1551358173267</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
       <option name="project" value="LOCAL" />
-      <updated>1549812949994</updated>
+      <updated>1551358173269</updated>
     </task>
-    <task id="LOCAL-00040" summary="Day 03 - input test data">
-      <created>1549813076138</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
+    <task id="LOCAL-00105" summary="Day 08">
+      <created>1551424897068</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
       <option name="project" value="LOCAL" />
-      <updated>1549813076138</updated>
+      <updated>1551424897068</updated>
     </task>
-    <task id="LOCAL-00041" summary="Day 19 - final solution complete">
-      <created>1549813517290</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
+    <task id="LOCAL-00106" summary="Day 10">
+      <created>1551467076915</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
       <option name="project" value="LOCAL" />
-      <updated>1549813517290</updated>
+      <updated>1551467076916</updated>
     </task>
-    <task id="LOCAL-00042" summary="Day 01 - final solution complete">
-      <created>1549836454933</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
+    <task id="LOCAL-00107" summary="Day 08">
+      <created>1551529313764</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
       <option name="project" value="LOCAL" />
-      <updated>1549836454934</updated>
+      <updated>1551529313766</updated>
     </task>
-    <task id="LOCAL-00043" summary="Day 09 -">
-      <created>1549836849875</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
+    <task id="LOCAL-00108" summary="Day 08 - input">
+      <created>1551529586758</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
       <option name="project" value="LOCAL" />
-      <updated>1549836849875</updated>
+      <updated>1551529586760</updated>
     </task>
-    <task id="LOCAL-00044" summary="Day 9">
-      <created>1549837872022</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
+    <task id="LOCAL-00109" summary="Day 08 - input test">
+      <created>1551529619969</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
       <option name="project" value="LOCAL" />
-      <updated>1549837872022</updated>
+      <updated>1551529619969</updated>
     </task>
-    <task id="LOCAL-00045" summary="Day 9 -">
-      <created>1549870285338</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
+    <task id="LOCAL-00110" summary="Day 08">
+      <created>1551529645403</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
       <option name="project" value="LOCAL" />
-      <updated>1549870285338</updated>
+      <updated>1551529645403</updated>
     </task>
-    <task id="LOCAL-00046" summary="Day 9 -">
-      <created>1549953311889</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
+    <task id="LOCAL-00111" summary="Day 08">
+      <created>1551770289622</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
       <option name="project" value="LOCAL" />
-      <updated>1549953311889</updated>
+      <updated>1551770289623</updated>
     </task>
-    <task id="LOCAL-00047" summary="Day 9 -">
-      <created>1549954636152</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
+    <task id="LOCAL-00112" summary="Day 08">
+      <created>1551942954611</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
       <option name="project" value="LOCAL" />
-      <updated>1549954636152</updated>
+      <updated>1551942954612</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00113" summary="Day 08">
+      <created>1552029413746</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1552029413749</updated>
+    </task>
+    <task id="LOCAL-00114" summary="Day 08">
+      <created>1552545382628</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1552545382630</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
-  <component name="TodoView" selected-index="2">
+  <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -611,27 +629,46 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18044515" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49470899" weight="0.18044515" />
+      <window_info id="Structure" order="1" sideWeight="0.505291" side_tool="true" weight="0.18044515" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.51430845" side_tool="true" visible="true" weight="0.3285968" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.57154214" side_tool="true" visible="true" weight="0.3285968" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49761525" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32981783" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.48569158" visible="true" weight="0.3285968" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49947312" weight="0.3285968" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5063593" side_tool="true" weight="0.3285968" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.48887122" weight="0.3285968" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49920508" weight="0.3285968" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.42845786" visible="true" weight="0.3285968" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.48330683" weight="0.3285968" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.51510334" side_tool="true" weight="0.3285968" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.40937996" weight="0.3285968" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49470899" visible="true" weight="0.18044515" />
+      <window_info id="Structure" order="1" sideWeight="0.505291" side_tool="true" weight="0.18044515" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5214626" side_tool="true" visible="true" weight="0.3285968" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49761525" weight="0.39964476" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49920508" weight="0.3285968" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4753577" weight="0.3285968" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49841017" weight="0.3285968" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.51510334" side_tool="true" weight="0.3285968" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.47853735" weight="0.3285968" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -675,32 +712,32 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Day 2" />
-    <MESSAGE value="Day 5" />
-    <MESSAGE value="Day 05 new" />
-    <MESSAGE value="Day 16" />
-    <MESSAGE value="Day 4 update" />
-    <MESSAGE value="Day 05" />
-    <MESSAGE value="Day 04" />
-    <MESSAGE value="Day 16 final" />
-    <MESSAGE value="Day 19" />
-    <MESSAGE value="Day 21" />
-    <MESSAGE value="Day 01 - input" />
+    <MESSAGE value="Day 16 - final complete solution" />
+    <MESSAGE value="Day 16 - final solution complete" />
+    <MESSAGE value="Day 09 - final solution complete" />
+    <MESSAGE value="Day 23 - test" />
+    <MESSAGE value="Day 23 - just part one" />
+    <MESSAGE value="Day 11 - just part one" />
     <MESSAGE value="Day 02 - just part one" />
-    <MESSAGE value="Day 02 - input" />
-    <MESSAGE value="Day 2 - input" />
-    <MESSAGE value="Day 03 - solution part one" />
-    <MESSAGE value="Day 03 - input" />
-    <MESSAGE value="Day 01 - final solution" />
-    <MESSAGE value="Day 03 -" />
-    <MESSAGE value="Day 03 - final solution complete" />
-    <MESSAGE value="Day 03 - input test data" />
-    <MESSAGE value="Day 19 - final solution complete" />
-    <MESSAGE value="Day 01 - final solution complete" />
-    <MESSAGE value="Day 09 -" />
-    <MESSAGE value="Day 9" />
-    <MESSAGE value="Day 9 -" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 9 -" />
+    <MESSAGE value="Day 11 - slow version without numpy" />
+    <MESSAGE value="Day 11 - help" />
+    <MESSAGE value="Day 11" />
+    <MESSAGE value="Day 11 old" />
+    <MESSAGE value="Day 11 - final solution complete" />
+    <MESSAGE value="Day 02" />
+    <MESSAGE value="Day 02 - final solution complete" />
+    <MESSAGE value="Day 12 - final solution complete" />
+    <MESSAGE value="Day 04 - just part one" />
+    <MESSAGE value="Day 04" />
+    <MESSAGE value="Day 04 - input" />
+    <MESSAGE value="Day 04 - input test data" />
+    <MESSAGE value="Day 12 - steps" />
+    <MESSAGE value="Day 04 - final solution complete" />
+    <MESSAGE value="Day 10" />
+    <MESSAGE value="Day 08 - input" />
+    <MESSAGE value="Day 08 - input test" />
+    <MESSAGE value="Day 08" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 08" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -714,37 +751,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AoC2018_test_23.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/testdict.py" />
-    <entry file="file://$PROJECT_DIR$/AoC2018_23_data_nanobots.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AoC2018_12_data_pot.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AoC2018_23.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AoC2018_12.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AoC2018_16_data_registers.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="981">
-          <caret line="3102" column="20" selection-start-line="3100" selection-end-line="3102" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/AoC2018_23_data_nanobots.txt" />
+    <entry file="file://$PROJECT_DIR$/AoC2018_12_data_pot.txt" />
+    <entry file="file://$PROJECT_DIR$/AoC2018_16_data_registers.txt" />
     <entry file="file://$PROJECT_DIR$/Aoc2018_19_help.py" />
     <entry file="file://$PROJECT_DIR$/AoC2018_19_factor_division.py" />
     <entry file="file://$PROJECT_DIR$/test array.py" />
@@ -755,48 +765,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AoC2018_02.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#87#102#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AoC2018_02_input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="191" column="17" lean-forward="true" selection-start-line="191" selection-start-column="17" selection-end-line="191" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AoC2018_01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AoC2018_03_input.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-21597" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AoC2018_04.py" />
-    <entry file="file://$PROJECT_DIR$/AoC2018_16.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="98" column="14" lean-forward="true" selection-start-line="98" selection-end-line="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AoC2018_03.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-438">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AoC2018_03_input_test.txt">
@@ -806,31 +777,185 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AoC2018_19.py">
+    <entry file="file://$PROJECT_DIR$/AoC2018_19_input.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+        <state relative-caret-position="248">
+          <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AoC2018_21.py">
+    <entry file="file://$PROJECT_DIR$/AoC2018_19_input_test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="4" selection-end-column="3" />
+        <state relative-caret-position="119">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AoC2018_test_23.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="e#45#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/1186064384/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2765">
+          <caret line="815" column="8" selection-start-line="815" selection-start-column="8" selection-end-line="815" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AoC2019_11_help.py" />
+    <entry file="file://$PROJECT_DIR$/AoC2018_09.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="33" column="66" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AoC2018_11_old.py" />
+    <entry file="file://$PROJECT_DIR$/AoC2018_01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AoC2018_03.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AoC2018_05.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="293">
+          <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AoC2018_09.py">
+    <entry file="file://$PROJECT_DIR$/AoC2018_16.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="62" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
+        <state relative-caret-position="153">
+          <caret line="10" column="59" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="59" />
+          <folding>
+            <element signature="e#80#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AoC2018_11.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="66" column="86" selection-start-line="66" selection-start-column="86" selection-end-line="66" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AoC2018_12.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="84" column="13" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AoC2018_02_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="249" column="26" selection-start-line="249" selection-start-column="26" selection-end-line="249" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AoC2018_02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="43" column="31" lean-forward="true" selection-start-line="41" selection-end-line="43" selection-end-column="31" />
+          <folding>
+            <element signature="e#83#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AoC2018_04_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17935">
+          <caret line="1055" column="42" selection-start-line="1055" selection-start-column="42" selection-end-line="1055" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AoC2018_04.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="48" column="46" selection-start-line="48" selection-end-line="48" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AoC2018_21_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AoC2018_19.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AoC2018_23.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="26" selection-start-line="26" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AoC2018_21.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AoC2018_10_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5814">
+          <caret line="342" column="43" selection-start-line="342" selection-start-column="43" selection-end-line="342" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AoC2018_08_old.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="10" selection-start-line="22" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AoC2018_08_input_test.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AoC2018_08.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-479">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AoC2018_08_help.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AoC2018_10.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="39" selection-start-line="8" selection-end-line="8" selection-end-column="39" />
         </state>
       </provider>
     </entry>
