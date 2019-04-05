@@ -4,153 +4,107 @@ Author: Stefan Schneider
 Github: StefSchneider
 """
 
-import operator
-
-path_file: str = "AoC2018_13_input_test.txt"
 path_file: str = "AoC2018_13_input.txt"
-
 map_list: list = []
-map_entry: tuple = ((0, 0), "", 0) # order: x-pos of cart, y-pos of cart, direction, next direction intersection (0=left, 1=straight, 2=right)
+map_entry: tuple = (0, "", 0)  # order: x-pos, ypos of cart, direction, next direction intersection (0=left, 1=straight, 2=right)
 carts: list = []
-cart: tuple = ()
+cart: tuple = () # use complex numbers for x- and y-position
 current_cart: tuple = ()
-CART_DIRECTIONS: dict = {"<": ("left", "-"), # order value: direction cart, entry map
-                         ">": ("right", "-"),
-                         "^": ("up", "|"),
-                         "v": ("down", "|")
-                         }
-INTERSECTION_DIRECTIONS: list = ["left", "straight", "right"]
-DIRECTION_CHANGES: dict = {("+", "left", "left"): "down", # order: 1: track, 2: direction cart, 3: direction intersection, 4: new direction
-                           ("+", "left", "straight"): "left",
-                           ("+", "left", "right"): "up",
-                           ("+", "right", "left"): "up",
-                           ("+", "right", "straight"): "right",
-                           ("+", "right", "right"): "down",
-                           ("+", "down", "left"): "right",
-                           ("+", "down", "straight"): "down",
-                           ("+", "down", "right"): "left",
-                           ("+", "up", "left"): "left",
-                           ("+", "up", "straight"): "up",
-                           ("+", "up", "right"): "right",
-                           ("/", "left"): "down",
-                           ("/", "right"): "up",
-                           ("/", "down"): "left",
-                           ("/", "up"): "right",
-                           ("\\", "left"): "up",
-                           ("\\", "right"): "down",
-                           ("\\", "down"): "right",
-                           ("\\", "up"): "left"
+next_intersection: int = 0
+INITIALCARTS: dict = {"<": (-1, "-"),  # order key: direction cart, entry map
+                      ">": (1, "-"),
+                      "^": (-1j, "|"),
+                      "v": (1j, "|")
+                      }
+INTERSECTION_DIRECTIONS: list = [-1, 0, 1]
+DIRECTION_CHANGES: dict = {("+", -1, -1): 1j,
+                           # order: 1: track, 2: direction cart, 3: direction intersection : new direction
+                           ("+", -1, 0): -1,
+                           ("+", -1, 1): -1j,
+                           ("+", 1, -1): -1j,
+                           ("+", 1, 0): 1,
+                           ("+", 1, 1): 1j,
+                           ("+", 1j, -1): 1,
+                           ("+", 1j, 0): 1j,
+                           ("+", 1j, 1): -1,
+                           ("+", -1j, -1): -1,
+                           ("+", -1j, 0): -1j,
+                           ("+", -1j, 1): 1,
+                           ("/", -1, 0): 1j,  # 3. value: 0 (straight)
+                           ("/", 1, 0): -1j,
+                           ("/", 1j, 0): -1,
+                           ("/", -1j, 0): 1,
+                           ("\\", -1, 0): -1j,
+                           ("\\", 1, 0): +1j,
+                           ("\\", 1j, 0): 1,
+                           ("\\", -1j, 0): -1,
+                           ("-", -1, 0): -1,
+                           ("-", 1, 0): 1,
+                           ("|", -1j, 0): -1j,
+                           ("|", 1j, 0): 1j,
                            }
-crash: bool = False
-new_direction = ""
-
+new_direction: int = 0
+crash_position: tuple = (0, 0)
+first_crash: bool = False
+first_crash_position: tuple = (0, 0)
+crashed: list = [] # list positions of crashed carts in cart list, set back to empty after deleting from list of carts
 
 def move_cart(current_cart: tuple) -> tuple:
-    x_pos = current_cart[0][0]
-    y_pos = current_cart[0][1]
-    direction = current_cart[1]
-    direction_intersection = current_cart[2]
-    new_direction = ""
-    if direction == "left":
-        x_pos -= 1
-    elif direction == "right":
-        x_pos += 1
-    elif direction == "up":
-        y_pos -= 1
-    elif direction == "down":
-        y_pos += 1
-
+    new_track: str = ""
+    direction_intersection: int = 0
+    cart_position: complex = current_cart[0]
+    direction: complex = current_cart[1]
+    next_intersection: int = current_cart[2]
+    cart_position += direction
     for i in range(0, len(map_list)):
-        if map_list[i][0][0] == x_pos and map_list[i][0][1] == y_pos:
-            list_index = i
-            new_direction = map_list[i][1]
-    print("New direction", new_direction)
-
-    if new_direction == "+":
-        if direction == "down" and INTERSECTION_DIRECTIONS[direction_intersection%3] == "left":
-            direction = "right"
-        elif direction == "up" and INTERSECTION_DIRECTIONS[direction_intersection%3] == "left":
-            direction = "left"
-        elif direction == "up" and INTERSECTION_DIRECTIONS[direction_intersection%3] == "right":
-            direction = "right"
-        elif direction == "down" and INTERSECTION_DIRECTIONS[direction_intersection%3] == "right":
-            direction = "left"
-        elif direction == "left" and INTERSECTION_DIRECTIONS[direction_intersection%3] == "left":
-            direction = "down"
-        elif direction == "right" and INTERSECTION_DIRECTIONS[direction_intersection%3] == "left":
-            direction = "up"
-        elif direction == "left" and INTERSECTION_DIRECTIONS[direction_intersection%3] == "rigtz":
-            direction = "up"
-        elif direction == "right" and INTERSECTION_DIRECTIONS[direction_intersection%3] == "right":
-            direction = "down"
-        direction_intersection += 1
-    elif new_direction == "/" and direction == "up":
-        direction = "right"
-    elif new_direction == "/" and direction == "down":
-        direction = "left"
-    elif new_direction == "/" and direction == "left":
-        direction = "down"
-    elif new_direction == "/" and direction == "right":
-        direction = "up"
-    elif new_direction == "\\" and direction == "up":
-        direction = "left"
-    elif new_direction == "\\" and direction == "down":
-        direction = "right"
-    elif new_direction == "\\" and direction == "left":
-        direction = "up"
-    elif new_direction == "\\" and direction == "right":
-        direction = "down"
-    else:
-        new_direction = direction
-
-    current_cart = ((x_pos, y_pos), direction, direction_intersection)
-    print("new cart position", current_cart)
+        if map_list[i][0] == cart_position:
+            new_track = map_list[i][1]
+            if new_track == "+":
+                direction_intersection = INTERSECTION_DIRECTIONS[next_intersection % 3]
+                next_intersection += 1
+            else:
+                direction_intersection = 0
+    direction = DIRECTION_CHANGES.get((new_track, direction, direction_intersection))
+    current_cart = (cart_position, direction, next_intersection)
 
     return current_cart
 
-
-
+# parse track and transfer in tuples
 data_file = open(path_file).read().split("\n")
-y: int = 0
-for line in data_file: # transfer data in map_list and car_list
+for y, line in enumerate(data_file):
     for x in range(0, len(line)):
         element = data_file[y][x]
         if element != " ":
-            if element in CART_DIRECTIONS:
-                cart = ((x, y), CART_DIRECTIONS.get(element)[0], 0)
+            if element in INITIALCARTS: # add new cart to list of carts
+                cart = (complex(x, y), INITIALCARTS.get(element)[0], next_intersection)
                 carts.append(cart)
-                element = CART_DIRECTIONS.get(element)[1]
-            map_entry = ((x, y), element)
+                element = INITIALCARTS.get(element)[1]
+            map_entry = (complex(x, y), element)
             map_list.append(map_entry)
-    y += 1
 
-while not crash:
-#    count_double = 0
-    carts.sort(key=lambda carts:carts[0][1])
+print("List of tracks:", map_list)
+
+while len(carts) > 1:
+    carts.sort(key=lambda carts: (carts[0].imag, carts[0].real)) # sort list of carts
     for i in range(0, len(carts)):
-        count_double = 0
-        print(carts[i])
-        current_cart = move_cart(carts[i])
-        print(current_cart)
-        carts[i] = current_cart
+        count_double: int = 0
+        current_cart = carts[i]
+        carts[i] = move_cart(current_cart)
         for j in range(0, len(carts)):
-            print("Cart", carts[j])
-            print("Check equal", current_cart[0], current_cart[1])
-            print("Count double", count_double)
-            if current_cart[0] == carts[j][0]:
-                count_double += 1
-        if count_double > 1:
-            crash = True
-            break
- #       if carts.count(current_cart[0] and current_cart[1]) > 1:
- #           crash = True
- #           break
- #       for j in range(0, len(carts)):
- #           if carts[j][0] == current_cart[0] and carts[j][1] == current_cart[1]:
- #               crash = True
- #               break
- #       carts.sort()
+            if carts[i][0] == carts[j][0] and carts[i] != carts[j]:
+                crash_position = (int(carts[i][0].real), int(carts[i][0].imag))
+                if not first_crash:
+                    first_crash_position = crash_position
+                    first_crash = True
+                print("CRASH at", crash_position)
+                crashed.append(i)
+                crashed.append(j)
 
-print(len(map_list), map_list)
-print(len(carts), carts)
-print(current_cart[0], current_cart[1])
+    # delete crashed carts from list of carts
+    if len(crashed) > 0:
+        crashed.sort()
+        del carts[crashed[0]:crashed[1]+1] # add 1 to second number for slicing
+        crashed = []
+
+print("First crash at:", first_crash_position)
+print("Position of last cart:", int(carts[0][0].real), ",", int(carts[0][0].imag))
