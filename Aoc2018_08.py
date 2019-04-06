@@ -5,7 +5,8 @@ Github: StefSchneider
 """
 
 path_file: str = "AoC2018_08_input.txt"
-data = list(map(int, open(path_file).read().split(" "))) # convert list of strings in list of integers
+data: list = list(map(int, open(path_file).read().split(" "))) # convert list of strings in list of integers
+
 
 def parse_node(data):
     number_children = data[0] # read number of children current node
@@ -28,10 +29,10 @@ def parse_node(data):
         for k in data[:number_metadata]: # collect metadata of child nodes
             if k > 0 and k <= len(values):
                 sum_values += values[k-1]
-        return (sum_metadata, sum_values, data[number_metadata:])
+        return (sum_metadata, sum_values, data[number_metadata:]) # result of child nodes
 
 # start collecting data from nodes
 metadata, value, last = parse_node(data) # use recursive structure
 print("\n")
-print("Sum of metadata entries:", metadata, "\n")
-print("Value of root node:", value)
+print("Part one: sum of metadata entries:", metadata, "\n")
+print("Part two: value of root node:", value)
